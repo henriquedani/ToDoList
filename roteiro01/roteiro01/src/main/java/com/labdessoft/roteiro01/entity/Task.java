@@ -13,12 +13,12 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
+@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Schema(description = "Todos os detalhes sobre uma tarefa.")
-@Entity
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
